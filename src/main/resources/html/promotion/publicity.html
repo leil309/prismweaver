@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Landkit"
+    })
+</head>
+<body class="pt-10">
+<!-- MODALS -->
+@@include("../partials/modals.html")
+<!-- NAVBAR -->
+@@include("../partials/navbar.html", {
+"classList": "navbar-light fixed-top bg-white border-bottom",
+"container": "container-fluid"
+})
+<section class="pt-8 pt-md-11">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Heading -->
+                <h2 class="mb-0">
+                    Prismweaver
+                </h2>
+
+                <!--  -->
+                <p class="mb-5 text-muted">
+                    prismweaverPrismweaver prismweaver, prismweaver.
+                </p>
+            </div>
+        </div> <!-- / .row -->
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Card -->
+                <div class="card card-row shadow-light-lg mb-6">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+
+                            <!-- Badge -->
+                            <span class="badge badge-pill badge-gray-600 badge-float badge-float-outside">
+                    <span class="h6 text-uppercase">Featured</span>
+                  </span>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
+                           style="background-image: url(/img/photos/photo-27.jpg);" href="#!">
+
+                            <!-- Image (placeholder) -->
+                            <img src="/img/photos/photo-27.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                            <!-- Shape -->
+                            <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
+                                @@include("../../static/img/shapes/curves/curve-5.svg")
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-1">
+
+                            <!-- Body -->
+                            <div class="card-body" href="#!">
+
+                                <!-- Heading -->
+                                <h3>
+                                    Photo on Right.
+                                </h3>
+
+                                <!-- Text -->
+                                <p class="mb-0 text-muted">
+                                    This is the body text of the blog post to give visitors an idea of what the post is
+                                    about beyond just the title. It can be a long snippet, a short snippet, whatever you
+                                    prefer the size of card and description to be.
+                                </p>
+                            </div>
+
+                            <!-- Meta -->
+                            <div class="card-meta" href="#!">
+
+                                <!-- Divider -->
+                                <hr class="card-meta-divider">
+
+                                <!-- Author -->
+                                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                                    기타 텍스트 or 이름
+                                </h6>
+
+                                <!-- Date -->
+                                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                                    <time datetime="2019-05-31">May 31</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+
+                <!-- Card -->
+                <div class="card card-row shadow-light-lg mb-6">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+
+                            <!-- Badge -->
+                            <span class="badge badge-pill badge-gray-600 badge-float badge-float-outside">
+                    <span class="h6 text-uppercase">Featured</span>
+                  </span>
+                        </div>
+                        <div class="col-12 col-md-6 bg-cover card-img-left"
+                           style="background-image: url(/img/photos/photo-28.jpg);" href="#!">
+
+                            <!-- Image (placeholder) -->
+                            <img src="/img/photos/photo-28.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                            <!-- Shape -->
+                            <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                                @@include("../../static/img/shapes/curves/curve-4.svg")
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                            <!-- Body -->
+                            <div class="card-body" href="#!">
+
+                                <!-- Heading -->
+                                <h3>
+                                    Photo on Left.
+                                </h3>
+
+                                <!-- Text -->
+                                <p class="mb-0 text-muted">
+                                    This is the body text of the blog post to give visitors an idea of what the post is
+                                    about beyond just the title. It can be a long snippet, a short snippet, whatever you
+                                    prefer the size of card and description to be.
+                                </p>
+                            </div>
+
+                            <!-- Meta -->
+                            <div class="card-meta" href="#!">
+
+                                <!-- Divider -->
+                                <hr class="card-meta-divider">
+
+                                <!-- Author -->
+                                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                                    관련된 내용으로 한 줄
+                                </h6>
+
+                                <!-- Date -->
+                                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                                    <time datetime="2019-05-29">May 29</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="card card-row shadow-light-lg bg-cover overlay overlay-dark overlay-80 text-white mb-6"
+                     style="background-image: url(/img/covers/cover-8.jpg);">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-6">
+
+                            <!-- Body -->
+                            <div class="card-body" href="#!">
+
+                                <!-- Heading -->
+                                <h3>
+                                    Background Photo + 80% Dark Overlay.
+                                </h3>
+
+                                <!-- Text -->
+                                <p class="mb-0 text-white-80">
+                                    It's easy to add a background image for the entire card, plus make text more legible
+                                    by adding an overlay across the background with simple utility classes. These are
+                                    all generated from the theme's variables!
+                                </p>
+                            </div>
+
+                            <!-- Meta -->
+                            <div class="card-meta" href="#!">
+
+                                <!-- Divider -->
+                                <hr class="card-meta-divider border-white-20">
+
+                                <!-- Author -->
+                                <h6 class="text-uppercase text-white-80 mr-2 mb-0">
+                                    대충 적당한 내용
+                                </h6>
+
+                                <!-- Date -->
+                                <p class="h6 text-uppercase text-white-80 mb-0 ml-auto">
+                                    <time datetime="2019-05-02">May 02</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+
+                <!-- Card -->
+                <div class="card card-row shadow-light-lg bg-cover overlay overlay-gradient-dark-right overlay-60 text-white mb-6"
+                     style="background-image: url(/img/photos/photo-30.jpg);">
+                    <div class="row no-gutters justify-content-end">
+                        <div class="col-12 col-md-6">
+
+                            <!-- Body -->
+                            <div class="card-body" href="#!">
+
+                                <!-- Heading -->
+                                <h3>
+                                    Background Photo + Gradient Overlay.
+                                </h3>
+
+                                <!-- Text -->
+                                <p class="mb-0 text-white-80">
+                                    This blog card example shows a background image, but instead of an even wash across
+                                    the entire background, it's a gradient from right to left controlled by another
+                                    simple utility class.
+                                </p>
+
+                            </div>
+
+                            <!-- Meta -->
+                            <div class="card-meta" href="#!">
+
+                                <!-- Divider -->
+                                <hr class="card-meta-divider border-white-20">
+
+                                <!-- Author -->
+                                <h6 class="text-uppercase text-white-80 mr-2 mb-0">
+                                    텍스트
+                                </h6>
+
+                                <!-- Date -->
+                                <p class="h6 text-uppercase text-white-80 mb-0 ml-auto">
+                                    <time datetime="2019-05-02">May 02</time>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+@@include("../partials/footer.html", {
+"classList": "bg-dark border-top border-gray-800-50"
+})
+
+@@include("../partials/scripts.html")
+</body>
+</html>
+<style>
+    .gmnoprint {
+        display: none !important;
+    }
+</style>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Landkit"
+    })
+</head>
+<body class="pt-10">
+<!-- MODALS -->
+@@include("../partials/modals.html")
+<!-- NAVBAR -->
+@@include("../partials/navbar.html", {
+"classList": "navbar-light fixed-top bg-white border-bottom",
+"container": "container-fluid"
+})
+
+<section class="py-10 py-md-8 bg-primary" id="welcome">
+    <div class="shape shape-blur-3 svg-shim text-white">
+        @@include("../../static/img/shapes/blurs/blur-3.svg")
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 text-center" data-aos="fade-up">
+
+                <!-- Image (mobile) -->
+                <img src="/img/illustrations/illustration-4.png" alt="..." class="img-fluid mb-6 d-lg-none">
+
+                <!-- Heading -->
+                <h1 class="display-2 font-weight-bold text-white">
+                    Designed secure. <br>
+                    Built for anything.
+                </h1>
+
+                <!-- Text -->
+                <p class="lead text-white mb-8">
+                    Forward thinking businesses use our cloud backup service to ensure data reliability and safety.
+                </p>
+
+                <!-- Button -->
+                <a href="#!" class="btn btn-white mr-1 lift">
+                    자세히보기 <i class="fe fe-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+<div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        @@include("../../static/img/shapes/curves/curve-2.svg")
+    </div>
+</div>
+<section class="py-10 py-md-14" id="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-12 text-center" data-aos="fade-up">
+
+                <!-- Image (mobile) -->
+                <img src="/img/illustrations/illustration-4.png" alt="..." class="img-fluid mb-6 d-lg-none">
+
+                <!-- Heading -->
+                <h1 class="display-2 font-weight-bold">
+                    테스트 텍스트 <br>
+                    ABCDEFG가나다라마바사.
+                </h1>
+
+                <!-- Text -->
+                <p class="lead mb-8">
+                    Forward thinking businesses use our cloud backup service to ensure data reliability and safety.
+                </p>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+<section>
+    <div class="position-relative">
+        <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+            @@include("../../static/img/shapes/curves/curve-1.svg")
+        </div>
+    </div>
+    <div class="bg-dark">
+        <div class="py-6 py-md-6 text-center">
+        </div>
+    </div>
+</section>
+<section>
+    <div id="map" style="height: 500px">
+        <script>
+            function initMap() {
+                var toggleWindow = false;
+                var center = {lat: 37.484104, lng: 127.1189735}
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: center,
+                    zoom: 15,
+                    mapTypeControl: false,
+                    streetViewControl: false
+                });
+                var marker = new google.maps.Marker({
+                    position: center,
+                    map: map
+                });
+                var infoWindow = new google.maps.InfoWindow({
+                    content:
+                        '<div class="marker-info__left">' +
+                        '   <p class="marker-info__business-name">프리즘위버</p>' +
+                        '   <p class="marker-info__info">송파구 법원로 엠스테이트 A동 612호</p>' +
+                        '</div>'
+                });
+                infoWindow.open(map, marker);
+                marker.addListener('click', function () {
+                    infoWindow.open(map, marker);
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVlGXpUxx78X9PYqqwlZGNXqGQo7RMO48&callback=initMap"
+                async defer></script>
+    </div>
+</section>
+@@include("../partials/footer.html", {
+"classList": "bg-dark border-top border-gray-800-50"
+})
+
+@@include("../partials/scripts.html")
+</body>
+</html>

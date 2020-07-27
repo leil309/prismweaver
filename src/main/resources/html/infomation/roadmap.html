@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include("../partials/head.html", {
+    "pageTitle": "Landkit"
+    })
+</head>
+<body class="pt-10">
+<!-- MODALS -->
+@@include("../partials/modals.html")
+<!-- NAVBAR -->
+@@include("../partials/navbar.html", {
+"classList": "navbar-light fixed-top bg-white border-bottom",
+"container": "container-fluid"
+})
+<section class="py-10 py-md-14" id="content">
+    <div class="shape shape-blur-3 svg-shim text-white">
+        @@include("../../static/img/shapes/blurs/blur-3.svg")
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-12 text-center" data-aos="fade-up">
+
+                <!-- Image (mobile) -->
+                <img src="/img/illustrations/illustration-4.png" alt="..." class="img-fluid mb-6 d-lg-none">
+
+                <!-- Heading -->
+                <h1 class="display-2 font-weight-bold">
+                    테스트 텍스트 <br>
+                    로드맵
+                </h1>
+
+                <!-- Text -->
+                <p class="lead mb-8">
+                    Forward thinking businesses use our cloud backup service to ensure data reliability and safety.
+                </p>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+@@include("../partials/footer.html", {
+"classList": "bg-dark border-top border-gray-800-50"
+})
+
+@@include("../partials/scripts.html")
+</body>
+</html>
+<style>
+    .gmnoprint {
+        display:none !important;
+    }
+</style>
