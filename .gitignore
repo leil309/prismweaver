@@ -2,3 +2,12 @@
 /.gradle/
 /build/
 /build/classes/java/main/
+src/main/resources/templates/index.html
+src/main/resources/templates/infomation/buisness.html
+src/main/resources/templates/infomation/infomation.html
+src/main/resources/templates/infomation/roadmap.html
+src/main/resources/templates/promotion/promotion.html
+src/main/resources/templates/promotion/publicity.html
+src/main/resources/templates/recrutment/recruitment.html
+src/main/resources/templates/recrutment/rightpeople.html
+node_modules/npm/node_modules/normalize-git-url/test/basic.js~
